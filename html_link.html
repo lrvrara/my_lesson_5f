@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Links</title>
+
+	<style>
+		a:link
+		{
+			color: beige;
+			background-color: skyblue;
+			text-decoration: underline;
+		}
+		a:visited
+		{
+			color: paleturquoise;
+			background-color: floralwhite;
+			text-decoration: underline;
+		}
+		a:hover,a:active
+		{
+			color: skyblue;
+			background-color: deeppink;
+			text-decoration: underline;
+		}
+
+	</style>
+</head>
+<body>
+
+	<h2>INTERNAL LINKS</h2>
+	<a href="html_style.html">HTML LINKS</a>
+
+	<h3>EXTERNAL LINKS</h3>
+	<a href="https://www.hasil.gov.my/">LHDN LINKS</a>
+
+	<h3>TARGET ATTRIBUTES</h3>
+	<--!_SELF,_blank,_parent,_top-->
+	<a href="html_quotation.html" target="_blank" title="this link route to HTML Quotation page"> HTML QUOTATION</a>
+	<br>
+	<h3>TARGET ATTRIBUTES</h3>
+	<a href="https://eagihan.e-maik.my/Semakanbyic" target="_blank title">MAIK LINKS</a>
+
+	<h2>IMAGE AS LINK</h2>
+	<a href="https://buttonoptimizer.com/" target="_blank" title="go to buttonoptimizer"> <img src="button/button.png"></a>
+
+	<h3>BUTTON AS LINK</h3>
+	<button onclick="document.location='html_formatting.html'">UiTM Kelantan</button>
+
+
+
+</body>
+</html>

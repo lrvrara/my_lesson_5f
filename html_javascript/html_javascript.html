@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- saved from url=(0090)file:///D:/Desktop/IMD318%20SUBJECT/my_personal_class/html_javascript/html_javascript.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascripts</title>
+</head>
+<body>
+
+	<h2>Javascripts change content</h2>
+
+	<p id="mycontent">I am using javascripts to change the content</p>
+	<button type="button" onclick="document.getElementById(&quot;mycontent&quot;).innerHTML=&quot;This is the second content.Change using Javascripts&quot;">Choose Me</button>
+
+	<h1>Javascript change style</h1>
+
+	<p id="style">This content is using Javascript to change the style</p>
+
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style").style.fontSize="28px";
+			document.getElementById("style").style.fontfamily="Papyrus";
+			document.getElementById("style").style.color="pink";
+			document.getElementById("style").style.backgroundColor="black";
+		}
+		
+	</script>
+
+	<button type="button" onclick="myStyle()">Change Style</button>
+
+	<h2>Javascripts manipulate image/attributes</h2>
+
+	<script>
+		function myPicture(a)
+		{
+			var pic;
+			if(a==0)
+			{
+				pic="images/lee_jongsuk.jpg"
+			}
+			else
+			{
+				pic="images/oppa.jpg"
+			}
+			document.getElementById('images').src=pic;
+
+			
+		}
+	</script>
+
+	<img src="file:///D:/Desktop/IMD318%20SUBJECT/my_personal_class/html_javascript/images/lee_jongsuk.jpg" id="images" width="65px" height="100px">
+	<p>
+		<button type="button" onclick="myPicture(0)">My oppa</button>
+		<button type="button" onclick="myPicture(1)">Your Oppa</button>
+	</p>
+
+	<h1>Alert Box</h1>
+
+	<button type="button" onclick="AlertBox()">Click Here</button>
+	<script>
+		function AlertBox()
+		{
+			alert("Hi. \nWelcome to the page")
+		}
+	</script>
+
+	<script>
+		
+		{
+			alert("Hi. \nWelcome to the page")
+		}
+	</script>
+
+
+
+
+</body></html>
